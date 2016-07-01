@@ -525,7 +525,7 @@
 
           for (s = 0; s < searchFields.length; s++) {
             value = extractValue(scope.localData[i], searchFields[s]) || '';
-            match = match || (value.toString().toLowerCase().indexOf(str.toString().toLowerCase()) >= 0);
+            match = match || (value.toString().toLowerCase().indexOf(str.toString().toLowerCase()) === 0);
           }
 
           if (match) {
